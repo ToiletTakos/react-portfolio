@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
+import Contact from './components/Contact'
 
 function App() {
   return (
     <div classNameName="App">
       <Nav></Nav>
+      <Contact></Contact>
       <section className="hero">
             <div>
                 <h2 className="hero-name">AKA ToiletTakos</h2>
