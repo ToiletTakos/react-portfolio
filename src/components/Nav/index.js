@@ -1,28 +1,33 @@
 import React from 'react';
 
 function Nav(props) {
+    const navItems = ['About-Me', 'Projects', 'Contact-Me']
        return(
         <header>
         <h2>
-          <a data-testid="link" href="/">
+          <a href="/">
             Toilet Takos
           </a>
         </h2>
         <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
+            <ul>
+                {navItems.map(navItems => (
+                    <li key={navItems}>
+                        <a 
+                            href={'#' + navItems.toLowerCase()}
+                            onClick={() => props.handlePageChange(navItems)}
+                            className={
+                                props.currentPage === navItems ? 'nav-link active' : 'nav-link'
+                              }
+                        >
+                            {navItems}
+                        </a>
                     </li>
-                    <li>
-                        <a href="#work">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact Me</a>
-                    </li>
-                    <li>
+                ))}
+                <li>
                         <a href="https://github.com/ToiletTakos" target="-blank">Github</a>
-                    </li>
-                </ul>
+                </li>
+            </ul>
             </nav>
       </header>
     )

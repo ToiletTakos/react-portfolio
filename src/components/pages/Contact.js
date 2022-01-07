@@ -37,9 +37,9 @@ function ContactForm() {
     }
 
     return (
-        <section>
-            <h1>Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
+        <section id="contact" className="info flex-row">
+            <h3>Contact <br /> Me</h3>
+            <form id="contact-form" className='example size' onSubmit={handleSubmit}>
                 {/* name input */}
                 <div>
                     <label htmlFor="name">Name:</label>
