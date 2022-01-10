@@ -28,20 +28,12 @@ function ContactForm() {
         }
 
         if(e.target.name === 'message') {
-            const isValid = validateEmail(e.target.value);
-            console.log(isValid);
-            // isValid conditional statement
-            if(!isValid) {
-                setErrorMessage('No message entered.')
-            }
-            else {
                 if(!e.target.value.length) {
                     setErrorMessage(`${e.target.name} is required.`)
                 }
                 else {
                     setErrorMessage('');
                 }
-            }
         }
         
         if (!errorMessage){

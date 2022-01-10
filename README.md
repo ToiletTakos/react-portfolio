@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# 20. React Challenge: React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Now that you’ve completed multiple projects, your task is to create a portfolio, using your new React skills to help set you apart from other developers whose portfolios don’t use the latest technologies.
 
-## Available Scripts
+## Steps
 
-In the project directory, you can run:
+* Created the github repository
+* npx create-react-app react-portfolio to create the base files
+* installed libraries needed aswell as bootstrap for styling
+* Created the base html file to display everything on one page 
+* broke up the working html into components(Nav, About, Contact, and Projects)
+* created the proper functionality in the nav to render each page on selecting the tab
+* Created the contact error handling for not valid email and no information entered in the message feild
+* stylized the projects page and made each project clickable to their deployed locations
+* updated the scripts to allow for the build and deploy
+* Handled the last bit few errors and wrote up the Readme
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Console](./Assets/running-from-console.png)
+Display the console out put showing launched to the localhost with no errors
 
-### `npm test`
+![Home Page](./Assets/home-page.png)
+The About page is the home page when launching the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Project page](./Assets/project-page.png)
+Displays the ObjectStore with the offline added entry.
 
-### `npm run build`
+![Contact page](./Assets/contact-page.png)
+Displaying the contact page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Contact page email error](./Assets/invalid-or-no-email.png)
+Displaying the error when email is not entered or not entered properly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Contact page message error](./Assets/Missing-message-error-message.png)
+Displaying the error for missing message.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Links
 
-### `npm run eject`
+* Deployed Url: https://toilettakos.github.io/react-portfolio/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Github: https://github.com/ToiletTakos/react-portfolio
