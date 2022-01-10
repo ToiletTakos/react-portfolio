@@ -6,19 +6,16 @@ function Nav(props) {
         <header>
         <h2>
           <a href="/">
-            Toilet Takos
+            Dan Pandolfo
           </a>
         </h2>
-        <nav>
-            <ul>
+        <nav className="nav">
+            <ul className="navUl">
                 {navItems.map(navItems => (
                     <li key={navItems}>
                         <a 
                             href={'#' + navItems.toLowerCase()}
                             onClick={() => props.handlePageChange(navItems)}
-                            className={
-                                props.currentPage === navItems ? 'nav-link active' : 'nav-link'
-                              }
                         >
                             {navItems}
                         </a>

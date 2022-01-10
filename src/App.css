@@ -1,4 +1,4 @@
-.App {
+.Apps {
   text-align: center;
 }
 
@@ -83,11 +83,11 @@ header a {
   text-decoration: none;
 }
 
-header nav {
+.nav {
   margin: 7px 0;
 }
 
-header nav ul {
+.navUl {
   display: flex;
   justify-content: space-between;
   flex-wrap:wrap;
@@ -129,8 +129,8 @@ header nav ul li a:hover {
   text-align: center;
 }
 
-.hero-name {
-  text-align: right;
+.herosname {
+  text-align: center;
   padding: 10px;
 }
 /* Hero End*/

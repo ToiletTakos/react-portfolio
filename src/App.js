@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Nav from './components/Nav';
 import Contact from './components/pages/Contact'
@@ -19,11 +20,11 @@ function App() {
         }
     }   
   return (
-    <div classNameName="App">
+    <div className="Apps">
       <Nav currentPage={currentPage} handlePageChange={handlePageChange}></Nav>
       <section className="hero">
             <div>
-                <h2 className="hero-name">AKA ToiletTakos</h2>
+                <h2 className="herosname">AKA ToiletTakos</h2>
             </div>
         </section>
         {/* <!-- End of jumbotron--> */}
@@ -33,10 +34,10 @@ function App() {
 
         {/* <!-- contact info/ footer--> */}
         <section id="contact" className="info flex-row">
-            <h3>Contact <br />Me</h3>
+            <h3>My <br />Links</h3>
             <nav className="size flex-row">
                 <ul>
-                    <li><a href="mailto:dan.pandolfo@gmail.com">dan.pandolfo@gmail.com</a></li>
+                    <li><a href="mailto:dan.pandolfo@gmail.com">Email</a></li>
                     <li><a href="https://twitter.com/ToiletTakos" target="-blank">Twitter</a></li>
                     <li><a href="https://open.spotify.com/playlist/62Tl0v5XOxDKuPv2mvjzGc" target="-blank">Spotify</a></li>
                 </ul>

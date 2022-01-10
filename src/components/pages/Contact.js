@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail} from '../../utils/helpers';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -25,6 +26,23 @@ function ContactForm() {
                 }
             }
         }
+
+        if(e.target.name === 'message') {
+            const isValid = validateEmail(e.target.value);
+            console.log(isValid);
+            // isValid conditional statement
+            if(!isValid) {
+                setErrorMessage('No message entered.')
+            }
+            else {
+                if(!e.target.value.length) {
+                    setErrorMessage(`${e.target.name} is required.`)
+                }
+                else {
+                    setErrorMessage('');
+                }
+            }
+        }
         
         if (!errorMessage){
             setFormState({...formState, [e.target.name]: e.target.value })
@@ -39,31 +57,33 @@ function ContactForm() {
     return (
         <section id="contact" className="info flex-row">
             <h3>Contact <br /> Me</h3>
-            <form id="contact-form" className='example size' onSubmit={handleSubmit}>
-                {/* name input */}
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-                </div>
-                {/* email input */}
-                <div>
-                    <label htmlFor='email'>Email address:</label>
-                    <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
-                </div>
-                {/* message text area */}
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-                </div>
-                {/* error message to user if error */}
-                {errorMessage && (
-                    <div>
-                        <p >{errorMessage}</p>
+            <div className='example size text-start'>
+                <form id="contact-form"  onSubmit={handleSubmit}>
+                    {/* name input */}
+                    <div className="mb-3">
+                        <label htmlFor="name" className="form-label">Name:</label>
+                        <input type="text" className="form-control" defaultValue={name} onBlur={handleChange} name="name" />
                     </div>
-                )}
-                {/* button element */}
-                <button utype="submit">Submit</button>
-            </form>
+                    {/* email input */}
+                    <div className="mb-3">
+                        <label htmlFor='email' className='form-label'>Email address:</label>
+                        <input type="email" className='form-control' defaultValue={email} onBlur={handleChange} name="email" />
+                    </div>
+                    {/* message text area */}
+                    <div className='mb-3'>
+                        <label htmlFor="message" className='form-label'>Message:</label>
+                        <textarea name="message" className='form-control' defaultValue={message} onBlur={handleChange} rows="5" />
+                    </div>
+                    {/* error message to user if error */}
+                    {errorMessage && (
+                        <div>
+                            <p >{errorMessage}</p>
+                        </div>
+                    )}
+                    {/* button element */}
+                    <button utype="submit" className='btn btn-secondary'>Submit</button>
+                </form>
+            </div>
         </section>
     );
 }
