@@ -9,12 +9,12 @@ function Projects() {
             <div className="example size flex-row">
                 {/* <!-- Project 1--> */}
                 <article className="project-box">
-                <a className={`work-image img-1`} href="https://the-learning-porch.herokuapp.com/" alt="Lerning Porch deployed app" target="blank"></a>
+                    <a className={`work-image img-2`} href="https://worki-it-out.herokuapp.com/" alt="Worki it out deployed app" target="blank"></a>
                 </article>
-
+                
                 {/* <!-- Project 2--> */}
                 <article className="project-box">
-                    <a className={`work-image img-2`} href="https://www.youtube.com/watch?v=IO9XlQrEt2Y&ab_channel=RickAstley" alt="place holder" target="blank"></a>
+                <a className={`work-image img-1`} href="https://the-learning-porch.herokuapp.com/" alt="Lerning Porch deployed app" target="blank"></a>
                 </article>
             
                 {/* <!-- Project 3--> */}

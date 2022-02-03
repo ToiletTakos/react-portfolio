@@ -5,7 +5,7 @@ function Nav(props) {
        return(
         <header>
         <h2>
-          <a href="/">
+          <a href="https://toilettakos.github.io/react-portfolio/">
             Dan Pandolfo
           </a>
         </h2>
